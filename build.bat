@@ -1,6 +1,9 @@
 @echo off
 
+call "%USERPROFILE%\code\msvc\setup.bat"
+
 if not exist SDL2.dll call sdl.bat
+if not exist build mkdir build
 
 pushd build
 
